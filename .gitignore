@@ -1,0 +1,89 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais
+venv/
+.venv/
+env/
+ENV/
+
+# =========================
+# Dependências
+# =========================
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+
+# =========================
+# Logs e arquivos temporários
+# =========================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# =========================
+# Testes
+# =========================
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# =========================
+# Build / Distribuição
+# =========================
+build/
+dist/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# IDEs / Editores
+# =========================
+.vscode/
+.idea/
+*.iml
+
+# =========================
+# Sistema Operacional
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Airflow
+# =========================
+airflow.cfg
+airflow.db
+logs/
+plugins/__pycache__/
+
+# =========================
+# dbt
+# =========================
+target/
+dbt_packages/
+logs/dbt.log
+
+# =========================
+# Kafka / MinIO (opcional)
+# =========================
+data/
+minio_data/
+
+# =========================
+# Variáveis de ambiente
+# =========================
+.env
+.env.*

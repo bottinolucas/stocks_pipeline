@@ -1,0 +1,7 @@
+python-dotenv
+kafka-python
+boto3
+dbt-core
+dbt-snowflake
+requests
+snowflake-connector-python
