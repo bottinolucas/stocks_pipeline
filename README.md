@@ -1,6 +1,6 @@
 # Stock Market Data Pipeline
 
-Pipeline de engenharia de dados end-to-end para ingestão, processamento, modelagem analítica e visualização de dados do mercado financeiro, utilizando Kafka, MinIO, Airflow, dbt, PostgreSQL e Power BI.
+Pipeline de engenharia de dados end-to-end para ingestão, processamento, modelagem analítica e visualização de dados do mercado financeiro, utilizando Kafka, MinIO, Airflow, dbt, PostgreSQL e Metabase.
 
 O projeto implementa a Medallion Architecture (Bronze / Silver / Gold) inteiramente dentro do PostgreSQL, sem dependência de plataformas proprietárias como Snowflake ou Databricks.
 
