@@ -15,7 +15,7 @@ O projeto implementa a Medallion Architecture (Bronze / Silver / Gold) inteirame
 - PostgreSQL: data warehouse analítico
 - dbt: transformação e modelagem dos dados
 - Airflow: orquestração dos pipelines
-- Power BI: visualização e dashboards
+- Metabase: visualização e dashboards
 - Docker: containerização do ambiente
 
 ## Estrutura do projeto
