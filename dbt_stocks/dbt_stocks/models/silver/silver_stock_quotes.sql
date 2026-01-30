@@ -1,15 +1,19 @@
-{{ config(materialized='view') }}
+select
+  id,
+  symbol,
+  fetched_at,
 
-SELECT
-    symbol,
-    current_price,
-    ROUND(day_high, 2) AS day_high,
-    ROUND(day_low, 2) AS day_low,
-    ROUND(day_open, 2) AS day_open,
-    ROUND(prev_close, 2) AS prev_close,
-    change_amount,
-    ROUND(change_percent, 4) AS change_percent,
-    market_timestamp,
-    fetched_at
-FROM {{ ref('bronze_stock_quotes') }}
-WHERE current_price IS NOT NULL
+  current_price,
+  day_open,
+  day_high,
+  day_low,
+  prev_close,
+
+  change_amount,
+
+  case
+    when prev_close = 0 then null
+    else (change_amount / prev_close) * 100
+  end as change_percent
+
+from {{ ref('bronze_stock_quotes') }}
