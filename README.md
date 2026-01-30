@@ -6,7 +6,7 @@ O projeto implementa a Medallion Architecture (Bronze / Silver / Gold) inteirame
 
 ## Arquitetura
 
-![alt text](image.png)
+![alt text](assets/arquitetura.png)
 
 ### Componentes
 
